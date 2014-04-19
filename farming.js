@@ -4,7 +4,7 @@ goog.provide('farming');
 goog.require('lime.Director'); 
 goog.require('lime.Scene'); 
 goog.require('lime.Layer');   
-goog.require('lime.GlossyButton'); 
+goog.require('lime.GlossyButton');
 goog.require('farming.Land');     
 
 //entrypoint 
@@ -65,15 +65,20 @@ var moneyLabel = new lime.Label().setText('$'+playerObj.money).setFontColor('#E8
     .setPosition(gameObj.controlsLayer_w-50, gameObj.height-gameObj.controlsLayer_h/2);
 controlsLayer.appendChild(moneyLabel); 
 
-    director.replaceScene(gameScene); 
-}
-
-
-
-//create land elements
+ //create land elements
     for(var i=0; i<gameObj.num_tiles_x; i++) {
         for(var j=0; j<gameObj.num_tiles_y; j++) {
             var landElement = new farming.Land(gameObj, playerObj).setPosition(i*gameObj.tile_size, j*gameObj.tile_size);
             landLayer.appendChild(landElement);
         }
     }
+
+
+
+    director.replaceScene(gameScene); 
+
+   
+
+}
+
+
