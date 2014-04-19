@@ -38,6 +38,16 @@ farming.Land = function(gameObj, playerObj) {
         playerObj.money -= gameObj.crops[playerObj.currentCrop].cost;
         gameObj.updateMoney();
     }
+    	else if(land.state == land.READY ) {
+        //harvest
+        land.setFill('images/bare_land.png');
+        land.state = land.EMPTY;
+
+        //update player money
+        playerObj.money += gameObj.crops[land.crop].revenue;
+        gameObj.updateMoney();
+    }        
+
 
     //growing plants
 dt = 1000;
@@ -60,10 +70,16 @@ lime.scheduleManager.scheduleWithDelay(function() {
             this.deathTime -= dt;
         }
     }
+
+
 }, this, dt);
+	
 
     });
+	
+
 }
+
 
 
 
