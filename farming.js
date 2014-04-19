@@ -50,11 +50,11 @@ var playerObj = {
 var controlArea = new lime.Sprite().setAnchorPoint(0,0)
     .setPosition(0, gameObj.height-gameObj.controlsLayer_h)
     .setSize(gameObj.controlsLayer_w, gameObj.controlsLayer_h)
-    .setFill('#0D0D0D')
+    .setFill('#777777')
 controlsLayer.appendChild(controlArea);
 
 //shop button
-var shopButton = new lime.GlossyButton().setColor('#133242').setText('Shop')
+var shopButton = new lime.GlossyButton().setColor('#ffffff').setText('Shop')
     .setPosition(60, gameObj.height-gameObj.controlsLayer_h/2)
     .setSize(80, 40);
 controlsLayer.appendChild(shopButton); 
