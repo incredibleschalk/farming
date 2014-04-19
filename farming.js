@@ -37,15 +37,15 @@ var playerObj = {
 
 gameObj.crops = [
     {
-        name: 'tomato',
+        name: 'Thief',
         cost: 10,
-        revenue: 18,
+        revenue: 10,
         time_to_ripe: 10, //secods
         time_to_death: 30, //second from when it's ripe
         image: 'tomato.png'
     },
     {
-        name: 'artichoke',
+        name: 'Dealer',
         cost: 20,
         revenue: 38,
         time_to_ripe: 60,
@@ -53,7 +53,7 @@ gameObj.crops = [
         image: 'artichoke.png'
     },
     {
-        name: 'lettuce',
+        name: 'Recruiter',
         cost: 15,
         revenue: 26,
         time_to_ripe: 30,
@@ -61,7 +61,7 @@ gameObj.crops = [
         image: 'lettuce.png'
     },
     {
-        name: 'eggplant',
+        name: 'Policitian',
         cost: 30,
         revenue: 78,
         time_to_ripe: 120,
@@ -69,7 +69,7 @@ gameObj.crops = [
         image: 'eggplant.png'
     },
     {
-        name: 'peppers',
+        name: 'Banker',
         cost: 40,
         revenue: 82,
         time_to_ripe: 180,
